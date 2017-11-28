@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-
-
+import { fakeAuth } from './fakeAuth'
+import { Redirect } from 'react-router-dom'
 
 class Login extends Component {
   state = {
@@ -12,14 +12,13 @@ class Login extends Component {
       this.setState({ redirectToReferrer: true })
     })
   }
-
   render() {
     const { from } = this.props.location.state || { from: { pathname: '/' } }
     const { redirectToReferrer } = this.state
     
     if (redirectToReferrer) {
       return (
-        <Redirect to={from}/>
+        <Redirect to={ from }/>
       )
     }
     
