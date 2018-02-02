@@ -1,5 +1,11 @@
-import React, { Component } from 'react';
-import { Header } from './components/Header';
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+
+// import { createStore, combineReducers, applyMiddleware } from 'redux'
+// import { Provider } from 'react-redux'
+// import createHistory from 'history/createBrowserHistory'
+
+import { Header } from './components/Header'
 
 
 
